@@ -1,0 +1,16 @@
+global:
+ resolve_timeout: 1m
+
+route:
+ receiver: 'email-notifications'
+
+receivers:
+- name: 'email-notifications'
+  email_configs:
+  - to: hariharan.r@oxsoftwares.com
+    from: noreply@oxsoftwares.com
+    smarthost: smtp.gmail.com:587
+    auth_username: noreply@oxsoftwares.com
+    auth_identity: noreply@oxsoftwares.com
+    auth_password: tJC4phuPuRLAeg7j
+    send_resolved: true
